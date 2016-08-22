@@ -1,0 +1,8 @@
+tiles框架:
+	1、配置模板jsp以及头、尾、中间jsp
+		模板jsp引用头页面、尾页面、中间内容页面（自由设置css）
+	2、设置控制类（@Configuration @EnableWebMvc ），设置两个方法
+		1、viewResolver方法返回TilesViewResolver
+		2、tilesConfigurer方法中设置tiles的xml文件，
+			文件中包括写明模板jsp页面，以及相应的参数，参数可以自己命名，自己设置值，
+			然后在模板jsp页面中进行引用，把头页面、尾页面、中间内容页面都引到模板jsp中（自由设置css）
